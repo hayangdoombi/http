@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./responseresult.html" method="get">
+        <fieldset>
+            <legend>의견 제출 양식</legend>
+            <div>
+                <label for="username">아이디:</label>
+                <input type="text" name="user name" placeholder="ID" autocomplete="on" required>   
+            </div>
+            <div>
+                <label for="password">비밀번호</label>
+                <input type="password" name="password" placeholder="PWD" autocomplete="on" required>
+            </div>
+            <div>
+                <label for="age">나이:</label>
+                <input type="number" name="age" min="0" max="100" autocomplete>
+            </div>
+            <div>
+                <input type="radio" name="type_1_1" value="satisfaction">
+                <label for="type_1_1">만족</label>
+                <input type="radio" name="type_1_1" value="dissatisfaction">
+                <label for="type_1_1">불만족</label>
+            </div>
+            <div>
+                <label for="summary">기타의견:</label>
+            </div>
+            <div>
+                <textarea name="summary" rows="20" cols="50"></textarea>
+            </div>
+            <div>
+                <button type="submit">제출</button>
+            </div>
+        </fieldset>
+
+    </form>
+</body>
+</html>
